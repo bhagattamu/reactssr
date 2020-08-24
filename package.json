@@ -7,6 +7,7 @@
     "webpack:server": "webpack --config webpack.server.js --watch",
     "webpack:client": "webpack --config webpack.client.js --watch",
     "webpack:start": "nodemon --watch build --exec node -r dotenv/config build/bundle.js",
+	"start": "node build/bundle.js",
     "dev": "npm-run-all --parallel webpack:*",
     "build": "webpack --config webpack.client.js && webpack --config webpack.server.js"
   },
